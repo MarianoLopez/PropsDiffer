@@ -18,10 +18,10 @@ export default () => {
     return (
         <Card style={{padding: 5}}>
             <Grid container spacing={1}>
-                <Grid item xs={2}>
+                <Grid item xs={12} xl={2} md={2}>
                     <PropertiesForm onSubmit={onSubmit}/>
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={12} xl={10} md={10}>
                     <CodeSnippetTab propertiesA={state.propertiesA} propertiesB={state.propertiesB}/>
                 </Grid>
             </Grid>

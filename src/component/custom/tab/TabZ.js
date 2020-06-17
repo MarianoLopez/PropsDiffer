@@ -20,7 +20,10 @@ const TabZ = ({titles, children, selectedTab = 0}) => {
     const TabHeader = () => {
         return (
             <AppBar position="static">
-                <Tabs value={state.selectedTab} onChange={handleTabChange}>
+                <Tabs value={state.selectedTab}
+                      onChange={handleTabChange}
+                      variant="scrollable"
+                      scrollButtons="on">
                     {titles.map((title, index) => <Tab key={index} label={title}/>)}
                 </Tabs>
             </AppBar>
